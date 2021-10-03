@@ -23,8 +23,9 @@ import { NotImplementedError } from '../extensions/index.js';
     fixArr.sort().forEach(elem => team += elem.slice(0, 1))
     
     return team
-
+    
   } else {
     return false
+
   }
 }
