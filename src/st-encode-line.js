@@ -11,16 +11,16 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function encodeLine(str) {
+  throw new NotImplementedError('Not implemented');
   let hashMap = {}
   let arr = []
 
   if (typeof(str) !== 'string') return ''
 
-  str.split('').map(elem => {
-    hashMap[elem] ? hashMap[elem]++ : hashMap[elem] = 1
-  })
+  // str.split('').map(elem => hashMap[elem] ? hashMap[elem]++ : hashMap[elem] = 1)
+  // Object.entries(hashMap).forEach(elem => arr.push(`${elem[1]}${elem[0]}`))
+  // return arr.join('')
+  
+  str.split('')
 
-  Object.entries(hashMap).forEach(elem => arr.push(`${elem[1]}${elem[0]}`))
-    
-  return arr.join('')
 }
